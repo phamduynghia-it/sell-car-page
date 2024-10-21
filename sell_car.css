@@ -6,7 +6,8 @@
     font-family: SFProDisplay-Bold, Arial, sans-serif;
 }
 body{
-  height: 100vh;
+  width: 80%;
+  margin: 0 auto ;
 }
 /* header  */
 .header img{
