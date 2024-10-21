@@ -78,38 +78,44 @@
                             <p>Nhập thông tin chi tiết xe của bạn và nhận báo giá ngay</p>
                         </div>
                         <div class="car-form">
-                            <form action="">
+                            <form action="" name="sell_car_form" >
                                 <div class="col-6 col-tb-12">
                                     <label for="brand">Hãng xe</label>
                                     <br>
                                     <input id="brand" type="text" name="brand" placeholder="nhập hãng xe ">
+                                    <p id="car_brand">*Vui lòng nhập hãng xe</p>
                                 </div>
                                 <div class="col-6 col-tb-12">
                                     <label for="model">Dòng xe</label>
                                     <br>
                                     <input type="text" id="model" name="model" placeholder="nhập dòng xe">
+                                    <p id="car_model">*Vui lòng nhập dòng xe </p>
                                 </div>                                
                                 <div class="col-6 col-tb-12">
                                     <label for="year">Năm sản xuất</label>
                                     <br>
                                     <input type="text" id="year" name="year" placeholder="năm sản xuất">
+                                    <p id="car_year">* Vui lòng nhập năm sản xuẩt </p>
                                 </div>
                                 <div class="col-6 col-tb-12">
                                     <label for="version">Phiên bản</label>
                                     <br>
                                     <input type="text" id="version" name="version" placeholder="phiên bản">
+                                    <p id="car_version">*Vui lòng nhập phiên bản </p>
                                 </div>
                                 <div class="col-6 col-tb-12">
                                     <label for="mileage">Số km đã đi</label>
                                     <br>
                                     <input type="number"  id="mileage" name="mileage" placeholder="Số km đã đi">
+                                    <p id="car_mileage">*Vui lòng nhập số km đã đi </p>
                                 </div>
                                 <div class="col-6 col-tb-12">
                                     <label for="phone">Số điện thoại</label>
                                     <br>
                                     <input type="tel" id="phone" name="phone" placeholder="096xxxxxxx">
+                                    <p id="car_phone">*Vui lòng nhập số điện thoại </p>
                                 </div>
-                                <button type="submit" class="submit-btn col-12">Gửi thông tin</button>
+                                <button type="submit" class="submit-btn col-12" onclick="validForm(document.forms.sell_car_form,event)">Gửi thông tin</button>
                             </form>
                         </div>
                         <p class="policy">Để tiếp tục, tôi đồng ý với 
@@ -122,5 +128,6 @@
             </div>
         </div>
     </div>
+    <script src="sell_car.js"></script>
 </body>
 </html>

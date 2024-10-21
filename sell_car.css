@@ -5,6 +5,9 @@
     padding: 0px;
     font-family: SFProDisplay-Bold, Arial, sans-serif;
 }
+body{
+  height: 100vh;
+}
 /* header  */
 .header img{
     width: 100%;
@@ -157,8 +160,14 @@
  .section-1 .container .right .form-container .main-form a:hover{
   text-decoration: underline;
  }
+ .section-1 .container .right .form-container .main-form .car-form p{
+  text-align: left;
+  font-size: 12px;
+  color: red;
+  display: none;
+ }
  input {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
