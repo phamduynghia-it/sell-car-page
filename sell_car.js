@@ -5,6 +5,7 @@ function checkNull(txt) {
 }
 const phoneRegex = /^[0-9]{3,}$/;
 const kmRegex = /^[0-9]{1,}$/;
+const yearRegex = /^[0-9]{4}$/;
 // ham check bieu thuc chinh qui
 function checkMatch(txt, regex) {
     return regex.test(txt.value);
@@ -84,6 +85,16 @@ function validForm(f, event) {
     }
     else{
         document.getElementById("mileageStatus").style.display = "none";
+    }
+    // check nam hop le
+    if(!checkMatch(f.yearOfManufacture , yearRegex) || f.yearOfManufacture.value > 2024 || f.yearOfManufacture.value < 1700 ){
+        document.getElementById("yearStatus").style.display = "block";
+        document.getElementById("yearStatus").innerHTML = "*năm không hợp lệ";
+        f.yearOfManufacture.focus();
+        return;
+    }
+    else{
+        document.getElementById("yearStatus").style.display = "none";
     }
     alert("Bạn đã nhập thành công!");
     f.submit(); // Chỉ gửi form nếu tất cả đều hợp lệ
