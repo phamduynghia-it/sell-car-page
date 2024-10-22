@@ -6,58 +6,58 @@
  function validForm(f,event){
     event.preventDefault();
     //  check rong brand
-    if (checkNull(f.brand)){
-        document.getElementById("car_brand").style.display="block";
-        f.brand.focus();
+    if (checkNull(f.carBrand)){
+        document.getElementById("brandStatus").style.display="block";
+        f.carBrand.focus();
         return;
     }
     else{
-        document.getElementById("car_brand").style.display="none";
+        document.getElementById("brandStatus").style.display="none";
     }
      //  check rong model
-    if (checkNull(f.model)){
-        document.getElementById("car_model").style.display="block";
-        f.model.focus();
+    if (checkNull(f.carModel)){
+        document.getElementById("modelStatus").style.display="block";
+        f.carModel.focus();
         return;
     }
     else{
-        document.getElementById("car_model").style.display="none";
+        document.getElementById("modelStatus").style.display="none";
     }
      //  check rong year
-    if (checkNull(f.year)){
-        document.getElementById("car_year").style.display="block";
-        f.year.focus();
+    if (checkNull(f.yearOfManufacture)){
+        document.getElementById("yearStatus").style.display="block";
+        f.yearOfManufacture.focus();
         return;
     }
     else{
-        document.getElementById("car_year").style.display="none";
+        document.getElementById("yearStatus").style.display="none";
     }
     //  check rong phien ban
     if (checkNull(f.version)){
-        document.getElementById("car_version").style.display="block";
+        document.getElementById("versionStatus").style.display="block";
         f.version.focus();
         return;
     }
     else{
-        document.getElementById("car_version").style.display="none";
+        document.getElementById("versionStatus").style.display="none";
     }
     //  check rong so km da di
     if (checkNull(f.mileage)){
-        document.getElementById("car_mileage").style.display="block";
+        document.getElementById("mileageStatus").style.display="block";
         f.mileage.focus();
         return;
     }
     else{
-        document.getElementById("car_mileage").style.display="none";
+        document.getElementById("mileageStatus").style.display="none";
     }
      //  check rong so dien thoai
-     if (checkNull(f.phone)){
-        document.getElementById("car_phone").style.display="block";
-        f.phone.focus();
+     if (checkNull(f.phoneNumber)){
+        document.getElementById("phoneNumberStatus").style.display="block";
+        f.phoneNumber.focus();
         return;
     }
     else{
-        document.getElementById("car_phone").style.display="none";
+        document.getElementById("phoneNumberStatus").style.display="none";
     }
     
     alert("Bạn đã nhập thành công!");

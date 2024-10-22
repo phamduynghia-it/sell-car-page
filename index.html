@@ -4,130 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <title> Bán Xe với CARPLA </title>
     <link rel="stylesheet" href="sell_car.css">
-
 </head>
 
 <body>
-    <!-- <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                    <a href="#">
-                        <img src="assets/image/Logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="col-xl-6 col-lg-7 inner-list">
-                    <ul class="row">
-                        <li class="col-xl-2 col-lg-2">
-                            <a href="index.html">Trang Chủ</a>
-                        </li>
-                        <li class="col-xl-2 col-lg-2">
-                            <a href="#">Giới Thiệu</a>
-                        </li>
-                        <li class="col-xl-2 col-lg-2">
-                            <a href="#">Mua Xe</a>
-                        </li>
-                        <li class="col-xl-2 col-lg-2">
-                            <a href="#">Bán Xe</a>
-                        </li>
-                        <li class="col-xl-2 col-lg-2">
-                            <a href="#">Tin Tức</a>
-                        </li>
-                        <li class="col-xl-2 col-lg-2">
-                            <a href="contact.html">Liên Hệ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="inner-contact col-xl-2 col-lg-1 col-md-4 col-sm-4">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="inner-phone">023321312</div>
-                </div>
-                <div class="inner-dn col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                    <a href="#"><i class="fa-regular fa-circle-user"></i></a>
-                    <a href="#" class="inner-sign">Đăng Nhập</a>
-                </div>
-            </div>
-        </div>
-    </header> -->
-
-    <div class="section-1">
+    <div class="section-1 hidden">
         <div class="container">
             <div class="left">
-                <div class="title">
-                    <p>Bán xe của bạn với giá tốt nhất</p>
-                </div>
-                <div class="car_logo">
-                    <img src="img/logo2.png" alt="logo thuong hieu">
+                <div class="inner-title">Bán xe của bạn
+                    với giá tốt nhất</div>
+                <div class="inner-logo">
+                    <img src="img/logo2.png" alt="CARPLA">
                 </div>
             </div>
-            <div class="right col-md-12">
-                <div class="form-container">
-                    <div class="icon_form">
-                        <img src="img/sellcaricon.png" alt="">
-                        <p>Bán xe </p>
-                    </div>
-                    <div class="main-form">
-                        <div class="text">
-                            <p>Nhập thông tin chi tiết xe của bạn và nhận báo giá ngay</p>
-                        </div>
-                        <div class="car-form">
-                            <form action="" name="sell_car_form" >
-                                <div class="col-6 col-tb-12">
-                                    <label for="brand">Hãng xe</label>
-                                    <br>
-                                    <input id="brand" type="text" name="brand" placeholder="nhập hãng xe ">
-                                    <p id="car_brand">*Vui lòng nhập hãng xe</p>
-                                </div>
-                                <div class="col-6 col-tb-12">
-                                    <label for="model">Dòng xe</label>
-                                    <br>
-                                    <input type="text" id="model" name="model" placeholder="nhập dòng xe">
-                                    <p id="car_model">*Vui lòng nhập dòng xe </p>
-                                </div>                                
-                                <div class="col-6 col-tb-12">
-                                    <label for="year">Năm sản xuất</label>
-                                    <br>
-                                    <input type="text" id="year" name="year" placeholder="năm sản xuất">
-                                    <p id="car_year">* Vui lòng nhập năm sản xuẩt </p>
-                                </div>
-                                <div class="col-6 col-tb-12">
-                                    <label for="version">Phiên bản</label>
-                                    <br>
-                                    <input type="text" id="version" name="version" placeholder="phiên bản">
-                                    <p id="car_version">*Vui lòng nhập phiên bản </p>
-                                </div>
-                                <div class="col-6 col-tb-12">
-                                    <label for="mileage">Số km đã đi</label>
-                                    <br>
-                                    <input type="number"  id="mileage" name="mileage" placeholder="Số km đã đi">
-                                    <p id="car_mileage">*Vui lòng nhập số km đã đi </p>
-                                </div>
-                                <div class="col-6 col-tb-12">
-                                    <label for="phone">Số điện thoại</label>
-                                    <br>
-                                    <input type="tel" id="phone" name="phone" placeholder="096xxxxxxx">
-                                    <p id="car_phone">*Vui lòng nhập số điện thoại </p>
-                                </div>
-                                <button type="submit" class="submit-btn col-12" onclick="validForm(document.forms.sell_car_form,event)">Gửi thông tin</button>
-                            </form>
-                        </div>
-                        <p class="policy">Để tiếp tục, tôi đồng ý với 
-                            <a href="#">Chính sách quyền riêng tư</a>, 
-                            <a href="#">Điều khoản sử dụng</a> & 
-                            <a href="#">Điều khoản & điều kiện niêm yết</a>.
-                        </p>
-                    </div>
+            <div class="right">
+                <div class="inner-righttop">
+                    <img src="img/sellcaricon.png" alt="">
+                    <p>bán xe</p>
                 </div>
+                <div class="inner-desc">
+                    <p>Nhập thông tin chi tiết xe của bạn và nhận báo giá ngay</p>
+                </div>
+                <div class="inner-form">
+                    <form name="car_selling_form">
+                        <div class="div">
+                            <label for="carBrand">Hãng xe :</label>
+                            <br>
+                            <input type="text" id="carBrand" name="carBrand" placeholder="nhập hãng xe">
+                            <p id="brandStatus">*Vui lòng nhập hãng xe</p>
+                        </div>
+                        <div>
+                            <label for="carModel">Dòng xe :</label>
+                            <br>
+                            <input type="text" id="carModel" name="carModel" placeholder="nhập dòng xe">
+                            <p id="modelStatus">*Vui lòng nhập dòng xe</p>
+                        </div>
+                        <div><label for="yearOfManufacture">Năm sản xuất :</label>
+                            <br>
+                            <input type="text" id="yearOfManufacture" name="yearOfManufacture"
+                                placeholder="năm sản xuất">
+                                <p id="yearStatus">*Vui lòng nhập năm sản xuất</p>
+                        </div>
+                        <div><label for="version">Phiên bản :</label>
+                            <br>
+                            <input type="text" id="version" name="version" placeholder="phiên bản">
+                            <p id="versionStatus">*Vui lòng nhập phiên bản</p>
+                        </div>
+                        <div><label for="mileage">Số km đã đi :</label>
+                            <br>
+                            <input type="text" id="mileage" name="mileage" placeholder="Số km đã đi">
+                            <p id="mileageStatus">*Vui lòng nhập số km đã đi </p>
+                        </div>
+                        <div><label for="phoneNumber">Số điện thoại :</label>
+                            <br>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="096xxxxxxx">
+                            <p id="phoneNumberStatus">*Vui lòng nhập số điện thoại </p>
+                        </div>
+
+                        <button class="btn " onclick="validForm(document.forms.car_selling_form, event)">gửi thông tin </button>
+                    </form>
+                </div>
+                <div class="inner-clause">Để tiếp tục, tôi đồng ý với <a href="">Chính sách quyền riêng tư, Điều khoản sử dụng</a> &
+                    <a href="">Điều khoản & điều kiện niêm yết</a>.</div>
             </div>
         </div>
     </div>
     <script src="sell_car.js"></script>
 </body>
+
 </html>
