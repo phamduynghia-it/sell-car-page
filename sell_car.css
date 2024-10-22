@@ -112,4 +112,52 @@
 .section-1 .container .right .inner-clause a:hover{
   text-decoration: underline;
 }
-
+@media (max-width: 1023.98px){
+  div.hidden{
+    background-color: #fff;
+    padding-top: 0px;
+  }
+  .section-1 .container .left{
+    width: 100vw; 
+    background-color: #FFDD00;
+    flex-direction: row;
+    align-items: center;
+  }
+  .section-1 .container{
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+    /* align-items: center; */
+  }
+  .section-1 .container .right{
+    height: 100%;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section-1 .container .left .inner-title{
+    font-size: 30px;
+    font-weight: bold;
+    height: 40%;
+    width: 40%;
+    padding-left: 20px;
+  }
+  .section-1 .container .left .inner-logo{
+    width: 55%;
+  }
+  .section-1 .container .right .inner-desc p{
+    font-size: 18px;
+   }
+   .section-1 .container .right .inner-form form div{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .section-1 .container .right .inner-form form .btn{
+    margin-top: 10px;
+  }
+}
+@media (max-width: 639.98px){
+  .section-1 .container .left .inner-title{
+    font-size: 18px;
+  }
+}
