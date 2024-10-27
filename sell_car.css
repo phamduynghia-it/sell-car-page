@@ -7,6 +7,7 @@
   padding: 20px 0px;
   background-color: #FFDD00;
   width: 100%;
+  margin-top: 62px;
 }
 .section-1 .container .left{
   width: 40%;
@@ -126,13 +127,15 @@
   .section-1 .container{
     flex-wrap: wrap;
     margin: 0px;
-    width: 100%;
-    /* align-items: center; */
+    width:100%;
+    display: block;
+    padding: 0px
+    /* margin: 0 auto; */
   }
   .section-1 .container .right{
     height: 100%;
     background-color: #fff;
-    width: 80%;
+    width: 100vw;
     margin: 0 auto;
   }
   .section-1 .container .left .inner-title{
